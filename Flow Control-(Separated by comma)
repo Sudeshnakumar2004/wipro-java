@@ -1,12 +1,20 @@
-/*import java.util.*;
-public class Main
-{
-	public static void main(String[] args)
-	{
-		Scanner sc=new Scanner(System.in);
-		char a=sc.next().charAt(0);
-		char b=sc.next().charAt(0);
-		if(a>b) System.out.print(b+","+a);
-		else System.out.print(a+","+b);
-	}
-}
+import java.util.*;
+class Main{
+    public static void main(String []args){
+        Scanner sc=new Scanner(System.in);
+        String a=sc.nextLine();
+        String[] b=a.split(" ");
+        if(a==""){
+            System.out.println("No values");
+        }
+        else{
+            for(int i=0;i<b.length;i++){
+                System.out.print(b[i]);
+            
+            if(i<b.length-1){
+                System.out.print(",");
+            }
+            }
+            
+        }
+    }
