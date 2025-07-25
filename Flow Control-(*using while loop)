@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        int i = 1;
+
+        while (i <= 5) {  // outer loop for rows
+            int j = 1;
+            while (j <= i) {  // inner loop for stars
+                System.out.print("* ");
+                j++;
+            }
+            System.out.println();  // move to next line
+            i++;
+        }
+    }
+}
