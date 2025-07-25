@@ -1,0 +1,26 @@
+ import java.util.*;
+ class Main{
+     public static void main(String[]args)
+     {
+     Scanner s=new Scanner(System.in);
+     String a=s.nextLine();
+     int b=s.nextInt();
+     String c="Male";
+     String d="Female";
+     if(a.equals(c)&&(b>=1&&b<=58))
+     {
+        System.out.println("8.4"); 
+     }
+     else if(a.equals(d)&&(b>=1&&b<=58))
+     {
+         System.out.println("8.2");
+     }else if(a.equals(c)&&(b>=59&&b<=100))
+     {
+         System.out.println("10.5");
+     }
+     else if(a.equals(d)&&(b>=59&&b<=100))
+     {
+         System.out.println("9.2");
+     }
+ }
+ }
